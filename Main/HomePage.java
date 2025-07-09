@@ -9,11 +9,13 @@ import java.util.Objects;
 public class HomePage extends JPanel {
     private Image charizard;
     private Image pokemonString;
+    private Image rossoFuoco;
 
     public HomePage() {
         try {
             charizard = ImageIO.read(Objects.requireNonNull(HomePage.class.getResource("/Entities/HomeScreen/Charizard_home.png")));
             pokemonString = ImageIO.read(Objects.requireNonNull(HomePage.class.getResource("/Entities/HomeScreen/PokemonString1.png")));
+            rossoFuoco = ImageIO.read(Objects.requireNonNull(HomePage.class.getResource("/Entities/HomeScreen/RossoFuoco.png")));
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
@@ -49,5 +51,9 @@ public class HomePage extends JPanel {
         }
 
         // SCRITTA "Pokemon rosso fuoco" al centro
+        if (rossoFuoco != null) {
+            g.drawImage(rossoFuoco, 225, 225, 200, 100, this);
+        }
+
     }
 }

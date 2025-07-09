@@ -26,7 +26,7 @@ public class HomePage extends JPanel {
 
         // Striscia arancione superiore
         g.setColor(new Color(255, 69, 0));
-        g.fillRect(0, 0, getWidth(), 20);
+        g.fillRect(0, 0, getWidth(), 30);
 
         // Striscia azzurra in mezzo
         g.setColor(new Color(64, 224, 208));
@@ -34,11 +34,11 @@ public class HomePage extends JPanel {
 
         // Striscia rossa inferiore con copyright e autore
         g.setColor(new Color(139, 0, 0));
-        g.fillRect(0, getHeight() - 20, getWidth(), 20);
+        g.fillRect(0, getHeight() - 30, getWidth(), 30);
 
         // IMMAGINE charizard a destra
         if (charizard != null) {
-            g.drawImage(charizard, 700, 100, 250, 250, this);
+            g.drawImage(charizard, 600, 100, 400, 400, this);
         }
     }
 }

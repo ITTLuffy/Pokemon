@@ -55,5 +55,21 @@ public class HomePage extends JPanel {
             g.drawImage(rossoFuoco, 225, 225, 200, 100, this);
         }
 
+        // Impostazioni per il rendering del testo
+        Graphics2D g2 = (Graphics2D) g;
+
+        // Attiva il rendering vettoriale e anti-aliasing
+        g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING,
+                RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+
+        // inizio GIOCO
+        g2.setColor(Color.WHITE);
+        g2.setFont(new Font("Times New Roman", Font.BOLD, 40));
+        g2.drawString("Press ENTER", 150, 460);
+
+        // copyright e autore
+        g2.setFont(new Font("Times New Roman", Font.BOLD, 20));
+        g2.drawString("© 2025 - ALESSIO FERRARI", 360, getHeight() - 10);
+
     }
 }

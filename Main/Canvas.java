@@ -3,9 +3,9 @@ package Main;
 import javax.swing.*;
 import java.awt.*;
 
-public class DrawingCanvas extends JPanel {
+public class Canvas extends JPanel {
     // empty constructor
-    public DrawingCanvas() {
+    public Canvas() {
 
     }
 

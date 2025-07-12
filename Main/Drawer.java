@@ -35,12 +35,14 @@ public class Drawer {
                 super.keyPressed(e);
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
                     // remove home page and add canvas
+                    frame.getContentPane().remove(homePage);
+                    Canvas c = new Canvas();
+                    frame.getContentPane().add(c); // add canvas to frame
+                    frame.revalidate(); // molto importante
+                    frame.repaint();    // forza il ridisegno
                 }
             }
         });
-
-//        Canvas c = new Canvas(); // create canvas
-//        frame.getContentPane().add(c); // add canvas to frame
 
         frame.setVisible(true); // make frame visible
 

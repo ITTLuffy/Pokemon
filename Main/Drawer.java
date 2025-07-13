@@ -36,8 +36,8 @@ public class Drawer {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
                     // remove home page and add canvas
                     frame.getContentPane().remove(homePage);
-                    Canvas c = new Canvas();
-                    frame.getContentPane().add(c); // add canvas to frame
+                    Controls1 c1 = new Controls1(); // create controls1
+                    frame.getContentPane().add(c1); // add canvas to frame
                     frame.revalidate(); // molto importante
                     frame.repaint();    // forza il ridisegno
                 }

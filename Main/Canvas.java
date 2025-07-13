@@ -13,5 +13,7 @@ public class Canvas extends JPanel {
     @Override
     public void paintComponents(Graphics g) {
         super.paintComponents(g);
+
+        // Set background color
     }
 }

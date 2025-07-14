@@ -38,7 +38,7 @@ public class Drawer {
                     frame.getContentPane().remove(homePage);
                     Controls1 c1 = new Controls1(); // create controls1
                     frame.getContentPane().add(c1); // add canvas to frame
-                    frame.revalidate(); // molto importante
+                    frame.revalidate();
                     frame.repaint();    // forza il ridisegno
                 }
             }

@@ -30,10 +30,25 @@ public class Controls1 extends JPanel {
 
         // Scritta controls in alto a sinistra
         g.setFont(new Font("Courier New", Font.BOLD, 50));
+        g.setColor(Color.gray);
+        g.drawString("CONTROLS", 12, 48);
         g.setColor(Color.white);
         g.drawString("CONTROLS", 10, 45);
 
         // Scritta next con simbolino della A
+        g.setFont(new Font("Courier New", Font.BOLD, 50));
+        g.setColor(Color.gray);
+        g.drawString("NEXT", 860, 48);
+        g.setColor(Color.white);
+        g.drawString("NEXT", 858, 45);
+
+        // A
+        g.setFont(new Font("Courier New", Font.BOLD, 30));
+        g.setColor(Color.white);
+        g.fillOval(800, 6, 50, 50);
+        g.setColor(Color.gray);
+        g.drawString("A", 816, 40);
+
 
         // Spiegazione al centro
 

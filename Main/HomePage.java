@@ -3,6 +3,8 @@ package Main;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.Objects;
 
@@ -19,6 +21,26 @@ public class HomePage extends JPanel {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+
+        setFocusable(true); // ricevo input
+        requestFocusInWindow(); // richiedo il focus quando viene mostrato
+
+        addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    // Rimuovo il pannello home e aggiungo il prossimo
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(HomePage.this);
+                    frame.getContentPane().remove(HomePage.this);
+                    Controls1 c1 = new Controls1(); // creo il prossimo pannello dei controlli
+                    frame.getContentPane().add(c1); // aggiungo il nuovo pannello
+                    frame.revalidate();
+                    frame.repaint(); // forza il ridisegno
+                }
+            }
+        });
     }
 
     @Override

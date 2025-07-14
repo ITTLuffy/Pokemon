@@ -45,12 +45,18 @@ public class Controls1 extends JPanel {
         // A
         g.setFont(new Font("Courier New", Font.BOLD, 30));
         g.setColor(Color.white);
-        g.fillOval(800, 6, 50, 50);
+        g.fillOval(800, 11, 40, 40);
         g.setColor(Color.gray);
         g.drawString("A", 816, 40);
 
-
-        // Spiegazione al centro
+        // Spiegazione al centro --> GESTIRE IL WRAP
+        g.setFont(new Font("Courier New", Font.BOLD, 50));
+        g.setColor(Color.gray);
+        g.drawString("The various buttons will be explained in " +
+                "the order of their importance.", 12, 250);
+        g.setColor(Color.white);
+        g.drawString("The various buttons will be explained in " +
+                "the order of their importance.", 10, 248);
 
         // Freccetta rossa in basso a destra
 

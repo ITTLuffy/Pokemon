@@ -3,8 +3,6 @@ package Main;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import java.util.Objects;
 
 public class Drawer {
@@ -27,22 +25,6 @@ public class Drawer {
         frame.getContentPane().add(homePage); // add home page to frame
 
         frame.setIconImage(icon); // set icon
-
-        // premi start
-        frame.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                super.keyPressed(e);
-                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    // remove home page and add canvas
-                    frame.getContentPane().remove(homePage);
-                    Controls1 c1 = new Controls1(); // create controls1
-                    frame.getContentPane().add(c1); // add canvas to frame
-                    frame.revalidate();
-                    frame.repaint();    // forza il ridisegno
-                }
-            }
-        });
 
         frame.setVisible(true); // make frame visible
 

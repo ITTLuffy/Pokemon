@@ -7,27 +7,27 @@ import java.awt.event.KeyEvent;
 
 public class Controls1 extends JPanel {
     public Controls1() {
-//        setFocusable(true); // ricevo input
-//        requestFocusInWindow(); // richiedo il focus quando viene mostrato
-//
-//        addKeyListener(new KeyAdapter() {
-//            @Override
-//            public void keyPressed(KeyEvent e) {
-//                super.keyPressed(e);
-//                char key = e.getKeyChar();
-//
-//                if (key == 'A') {
-//                    // Rimuovo il pannello dei controlli e aggiungo il prossimo
-//                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls1.this);
-//                    frame.getContentPane().remove(Controls1.this);
-//                    Controls2 c2 = new Controls2(); // creo il prossimo pannello dei controlli
-//                    frame.getContentPane().add(c2); // aggiungo il nuovo pannello
-//                    frame.revalidate();
-//                    frame.repaint(); // forza il ridisegno
-//                }
-//
-//            }
-//        });
+        setFocusable(true); // ricevo input
+        requestFocusInWindow(); // richiedo il focus quando viene mostrato
+
+        addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                char key = e.getKeyChar();
+
+                if (key == 'A' || key == 'a') {
+                    // Rimuovo il pannello dei controlli e aggiungo il prossimo
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls1.this);
+                    frame.getContentPane().remove(Controls1.this);
+                    Controls2 c2 = new Controls2(); // creo il prossimo pannello dei controlli
+                    frame.getContentPane().add(c2); // aggiungo il nuovo pannello
+                    frame.revalidate();
+                    frame.repaint(); // forza il ridisegno
+                }
+
+            }
+        });
 
     }
 

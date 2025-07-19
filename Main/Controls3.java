@@ -3,8 +3,8 @@ package Main;
 import javax.swing.*;
 import java.awt.*;
 
-public class Controls2 extends JPanel {
-    public Controls2() {
+public class Controls3 extends JPanel {
+    public Controls3() {
 
     }
 
@@ -31,9 +31,9 @@ public class Controls2 extends JPanel {
         // Scritta controls in alto a sinistra
         g.setFont(new Font("Courier New", Font.BOLD, 50));
         g.setColor(Color.gray);
-        g.drawString("HELP", 12, 48);
+        g.drawString("CONTROLS", 12, 48);
         g.setColor(Color.white);
-        g.drawString("HELP", 10, 45);
+        g.drawString("CONTROLS", 10, 45);
 
         // Scritta next con simbolino della A
         g.setFont(new Font("Courier New", Font.BOLD, 50));

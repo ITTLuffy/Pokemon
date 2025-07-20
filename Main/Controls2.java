@@ -49,5 +49,19 @@ public class Controls2 extends JPanel {
         g.setColor(Color.gray);
         g.drawString("A", 816, 40);
 
+        // Spiegazione al centro --> GESTIRE IL WRAP
+        g.setFont(new Font("Courier New", Font.BOLD, 50));
+        g.setColor(Color.gray);
+        g.drawString("Greetings! This is HELP System." +
+                "Call me up whenever and wherever you need by pressing L or R  Button." +
+                "The help messages change to suit the situation, " +
+                "so check them often, please.", 12, 250);
+        g.setColor(Color.white);
+        g.drawString("Greetings! This is HELP System." +
+        "Call me up whenever and wherever you need by pressing L or R  Button." +
+                "The help messages change to suit the situation, " +
+                "so check them often, please.", 10, 248);
+
+
     }
 }

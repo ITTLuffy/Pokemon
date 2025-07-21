@@ -47,7 +47,7 @@ public class Controls3 extends JPanel {
         g.setColor(Color.white);
         g.fillOval(800, 11, 40, 40);
         g.setColor(Color.gray);
-        g.drawString("A", 816, 40);
+        g.drawString("A", 812, 40);
 
     }
 }

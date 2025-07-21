@@ -49,19 +49,22 @@ public class Controls2 extends JPanel {
         g.setColor(Color.gray);
         g.drawString("A", 816, 40);
 
-        // Spiegazione al centro --> GESTIRE IL WRAP
-        g.setFont(new Font("Courier New", Font.BOLD, 50));
+        // Spiegazione al centro --> background grigio
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
-        g.drawString("Greetings! This is HELP System." +
-                "Call me up whenever and wherever you need by pressing L or R  Button." +
-                "The help messages change to suit the situation, " +
-                "so check them often, please.", 12, 250);
-        g.setColor(Color.white);
-        g.drawString("Greetings! This is HELP System." +
-        "Call me up whenever and wherever you need by pressing L or R  Button." +
-                "The help messages change to suit the situation, " +
-                "so check them often, please.", 10, 248);
+        g.drawString("Greetings! This is HELP System.", 12, 200);
+        g.drawString("Call me up whenever and wherever you", 12, 250);
+        g.drawString("need by pressing L or R Button.", 12, 300);
+        g.drawString("The help messages change to suit the", 12, 350);
+        g.drawString("situation, so check them often, please.", 12, 400);
 
+        g.setColor(Color.white);
+        // Bianco
+        g.drawString("Greetings! This is HELP System.", 10, 198);
+        g.drawString("Call me up whenever and wherever you", 10, 248);
+        g.drawString("need by pressing L or R Button.", 10, 298);
+        g.drawString("The help messages change to suit the", 10, 348);
+        g.drawString("situation, so check them often, please.", 10, 398);
 
     }
 }

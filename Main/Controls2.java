@@ -30,6 +30,12 @@ public class Controls2 extends JPanel {
 
     }
 
+    public void addNotify() {
+        super.addNotify();
+        requestFocusInWindow(); // il focus funziona meglio qui
+    }
+
+
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);

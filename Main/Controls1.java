@@ -82,12 +82,12 @@ public class Controls1 extends JPanel {
         // Spiegazione al centro --> GESTIRE IL WRAP
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
-        g.drawString("The various buttons will be explained ", 12, 280);
-        g.drawString("in the order of their importance.", 12, 330);
+        g.drawString("The various buttons will be explained ", 12, 270);
+        g.drawString("in the order of their importance.", 12, 320);
 
         g.setColor(Color.white);
-        g.drawString("The various buttons will be explained ", 12, 280);
-        g.drawString("in the order of their importance.", 12, 330);
+        g.drawString("The various buttons will be explained ", 10, 268);
+        g.drawString("in the order of their importance.", 10, 318);
 
         // Freccetta rossa in basso a destra --> FARE
         g.setColor(Color.red);

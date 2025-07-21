@@ -1,13 +1,15 @@
 package Main;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.util.Objects;
 
 public class Controls1 extends JPanel {
 
-
+    private Image icon = null;
     public Controls1() {
         setFocusable(true); // ricevo input
         requestFocusInWindow(); // richiedo il focus quando viene mostrato
@@ -29,6 +31,12 @@ public class Controls1 extends JPanel {
                 }
             }
         });
+
+        try { // carico l'icona
+            icon = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/Arrow.png")));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 
@@ -89,10 +97,7 @@ public class Controls1 extends JPanel {
         g.drawString("The various buttons will be explained ", 10, 268);
         g.drawString("in the order of their importance.", 10, 318);
 
-        // Freccetta rossa in basso a destra --> FARE
-        g.setColor(Color.red);
-        // g.fillPolygon();
-
+        g.drawImage(icon, 870, 500, null); // disegno l'icona
 
     }
 }

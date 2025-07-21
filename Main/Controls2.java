@@ -2,9 +2,31 @@ package Main;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class Controls2 extends JPanel {
     public Controls2() {
+        setFocusable(true); // ricevo input
+        requestFocusInWindow(); // richiedo il focus quando viene mostrato
+
+        addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                char key = e.getKeyChar(); // ottengo il carattere premuto
+
+                if (key == 'a' || key == 'A') { // se è premuto A o a
+                    // Rimuovo il pannello home e aggiungo il prossimo
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls2.this);
+                    frame.getContentPane().remove(Controls2.this);
+                    Controls3 c3 = new Controls3(); // creo il prossimo pannello dei controlli
+                    frame.getContentPane().add(c3); // aggiungo il nuovo pannello
+                    frame.revalidate();
+                    frame.repaint(); // forza il ridisegno
+                }
+            }
+        });
 
     }
 

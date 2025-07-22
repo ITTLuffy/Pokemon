@@ -38,6 +38,10 @@ public class LoR extends JPanel{
 
                 repaint();
 
+                if (key == KeyEvent.VK_A || key == KeyEvent.VK_B) { // se è premuto A o invio
+
+                }
+
             }
         });
 
@@ -89,6 +93,13 @@ public class LoR extends JPanel{
         g.fillOval(800, 11, 40, 40);
         g.setColor(Color.gray);
         g.drawString("A", 812, 40);
+
+        g.setFont(new Font("Courier New", Font.BOLD, 30));
+        g.setColor(Color.white);
+        g.fillOval(850, 11, 40, 40);
+        g.setColor(Color.gray);
+        g.drawString("B", 850, 40);
+
 
         // Spiegazione al centro --> background grigio
         g.setFont(new Font("Courier New", Font.BOLD, 41));

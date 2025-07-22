@@ -1,10 +1,18 @@
 package Main;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.util.Objects;
 
 public class LoR extends JPanel{
+    private Image icon;
     public LoR() {
+        try {
+            icon = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/white_arrow.png")));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 
@@ -59,19 +67,20 @@ public class LoR extends JPanel{
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
         g.drawString("About this game", 12, 130);
-        g.drawString("The HELP System", 30, 180);
-        g.drawString("The game", 30, 230);
-        g.drawString("Wireless Adapter", 30, 280);
-        g.drawString("CANCEL", 30, 330);
+        g.drawImage(icon, 2, 167, 39, 62, null);
+        g.drawString("The HELP System", 50, 210);
+        g.drawString("The game", 50, 260);
+        g.drawString("Wireless Adapter", 50, 310);
+        g.drawString("CANCEL", 50, 360);
 
 
         g.setColor(Color.white);
         // Bianco
-        g.drawString("About this game.", 10, 128);
-        g.drawString("The HELP System", 28, 178);
-        g.drawString("The game", 28, 228);
-        g.drawString("Wireless Adapter", 28, 278);
-        g.drawString("CANCEL", 28, 328);
+        g.drawString("About this game", 10, 128);
+        g.drawString("The HELP System", 48, 208);
+        g.drawString("The game", 48, 258);
+        g.drawString("Wireless Adapter", 48, 308);
+        g.drawString("CANCEL", 48, 358);
 
 
     }

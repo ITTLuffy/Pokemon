@@ -11,7 +11,7 @@ public class LoR extends JPanel{
     private int iconX = 2;
     private int iconY = 167;
     private int YMassimo = iconY;
-    private int YMinimo = iconY + 200;
+    private int YMinimo = iconY + 150;
 
 
     public LoR() {

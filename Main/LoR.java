@@ -6,7 +6,7 @@ import java.awt.*;
 public class LoR extends JPanel{
     public LoR() {
 
-        }
+    }
 
     public void addNotify() {
         super.addNotify();
@@ -58,11 +58,21 @@ public class LoR extends JPanel{
         // Spiegazione al centro --> background grigio
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
-        g.drawString("About this game", 12, 150);
+        g.drawString("About this game", 12, 130);
+        g.drawString("The HELP System", 30, 180);
+        g.drawString("The game", 30, 230);
+        g.drawString("Wireless Adapter", 30, 280);
+        g.drawString("CANCEL", 30, 330);
+
 
         g.setColor(Color.white);
         // Bianco
-        g.drawString("About this game.", 10, 148);
+        g.drawString("About this game.", 10, 128);
+        g.drawString("The HELP System", 28, 178);
+        g.drawString("The game", 28, 228);
+        g.drawString("Wireless Adapter", 28, 278);
+        g.drawString("CANCEL", 28, 328);
+
 
     }
 }

@@ -58,10 +58,13 @@ public class Help extends JPanel {
         // Spiegazione al centro --> background grigio
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
+        g.drawString("About this game", 50, 150);
+        g.drawString("EXIT", 50, 200);
 
 
         g.setColor(Color.white);
-        // Bianco
+        g.drawString("About this game", 48, 148);
+        g.drawString("EXIT", 48, 198);
 
 
     }

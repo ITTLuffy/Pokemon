@@ -24,8 +24,16 @@ public class Controls1 extends JPanel {
                     // Rimuovo il pannello home e aggiungo il prossimo
                     JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls1.this);
                     frame.getContentPane().remove(Controls1.this);
-                    Controls2 c2 = new Controls2(); // creo il prossimo pannello dei controlli
-                    frame.getContentPane().add(c2); // aggiungo il nuovo pannello
+                    Controls3 c3 = new Controls3(); // creo il prossimo pannello dei controlli
+                    frame.getContentPane().add(c3); // aggiungo il nuovo pannello
+                    frame.revalidate();
+                    frame.repaint(); // forza il ridisegno
+                } else if (key == 'l' || key == 'L' || key == 'r' || key == 'R') { // se è premuto l o r
+                    // Rimuovo il pannello home e aggiungo il precedente
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls1.this);
+                    frame.getContentPane().remove(Controls1.this);
+                    Help help = new Help(); // creo il pannello dei controlli
+                    frame.getContentPane().add(help); // aggiungo il nuovo pannello
                     frame.revalidate();
                     frame.repaint(); // forza il ridisegno
                 }

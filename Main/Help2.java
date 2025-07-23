@@ -6,14 +6,14 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.Objects;
 
-public class Help extends JPanel {
+public class Help2 extends JPanel {
     private Image icon;
     private int iconX = 2;
     private int iconY = 107;
     private int YMassimo = iconY;
     private int YMinimo = iconY + 50;
 
-    public Help() {
+    public Help2() {
         try {
             icon = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/white_arrow.png")));
         } catch (Exception e) {
@@ -36,8 +36,8 @@ public class Help extends JPanel {
                     iconY += 50;
                 } else if (iconY == 150 && keyChar == 'A' || keyChar == 'a') { // About this game
                     // Rimuovo il pannello home e aggiungo il prossimo
-                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help.this);
-                    frame.getContentPane().remove(Help.this);
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help2.this);
+                    frame.getContentPane().remove(Help2.this);
                     LoR lor = new LoR(); // creo il prossimo pannello dei controlli
                     frame.getContentPane().add(lor); // aggiungo il nuovo pannello
                     frame.revalidate();

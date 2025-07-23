@@ -5,8 +5,8 @@ import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-public class Controls2 extends JPanel {
-    public Controls2() {
+public class Help1 extends JPanel {
+    public Help1() {
         setFocusable(true); // ricevo input
         requestFocusInWindow(); // richiedo il focus quando viene mostrato
 
@@ -18,17 +18,17 @@ public class Controls2 extends JPanel {
 
                 if (key == 'a' || key == 'A') { // se è premuto A o a
                     // Rimuovo il pannello home e aggiungo il prossimo
-                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls2.this);
-                    frame.getContentPane().remove(Controls2.this);
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help1.this);
+                    frame.getContentPane().remove(Help1.this);
                     Controls3 c3 = new Controls3(); // creo il prossimo pannello dei controlli
                     frame.getContentPane().add(c3); // aggiungo il nuovo pannello
                     frame.revalidate();
                     frame.repaint(); // forza il ridisegno
                 } else if(key == 'l' || key == 'L' || key == 'r' || key == 'R') { // se è premuto l o r
                     // Rimuovo il pannello home e aggiungo il precedente
-                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls2.this);
-                    frame.getContentPane().remove(Controls2.this);
-                    Help help = new Help(); // creo il pannello dei controlli
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help1.this);
+                    frame.getContentPane().remove(Help1.this);
+                    Help2 help = new Help2(); // creo il pannello dei controlli
                     frame.getContentPane().add(help); // aggiungo il nuovo pannello
                     frame.revalidate();
                     frame.repaint(); // forza il ridisegno

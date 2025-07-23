@@ -1,11 +1,50 @@
 package Main;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.util.Objects;
 
 public class Help extends JPanel {
-    public Help() {
+    private Image icon;
+    private int iconX = 2;
+    private int iconY = 107;
+    private int YMassimo = iconY;
+    private int YMinimo = iconY + 50;
 
+    public Help() {
+        try {
+            icon = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/white_arrow.png")));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        setFocusable(true); // ricevo input
+        requestFocusInWindow(); // richiedo il focus quando viene mostrato
+
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            @Override
+            public void keyPressed(java.awt.event.KeyEvent e) {
+                super.keyPressed(e);
+                int key = e.getKeyCode(); // ottengo il carattere premuto
+
+                if (key == KeyEvent.VK_UP && iconY > YMassimo) { // se è premuto su e non supera il massimo
+                    iconY -= 50;
+                } else if (key == KeyEvent.VK_DOWN && iconY < YMinimo) { // se è premuto giù e non supera il minimo
+                    iconY += 50;
+                }
+
+                repaint();
+
+            }
+        });
+
+    }
+
+    public void addNotify() {
+        super.addNotify();
+        requestFocusInWindow(); // il focus funziona meglio qui
     }
 
     public void paintComponent(Graphics g) {
@@ -58,6 +97,7 @@ public class Help extends JPanel {
         // Spiegazione al centro --> background grigio
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
+        g.drawImage(icon, iconX, iconY, 39, 62, null);
         g.drawString("About this game", 50, 150);
         g.drawString("EXIT", 50, 200);
 

@@ -28,11 +28,21 @@ public class Help extends JPanel {
             public void keyPressed(java.awt.event.KeyEvent e) {
                 super.keyPressed(e);
                 int key = e.getKeyCode(); // ottengo il carattere premuto
+                char keyChar = e.getKeyChar(); // ottengo il carattere premuto
 
                 if (key == KeyEvent.VK_UP && iconY > YMassimo) { // se è premuto su e non supera il massimo
                     iconY -= 50;
                 } else if (key == KeyEvent.VK_DOWN && iconY < YMinimo) { // se è premuto giù e non supera il minimo
                     iconY += 50;
+                } else if (iconY == 150 && keyChar == 'A' || keyChar == 'a') { // About this game
+                    // Rimuovo il pannello home e aggiungo il prossimo
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help.this);
+                    frame.getContentPane().remove(Help.this);
+                    LoR lor = new LoR(); // creo il prossimo pannello dei controlli
+                    frame.getContentPane().add(lor); // aggiungo il nuovo pannello
+                    frame.revalidate();
+                } else if (iconY == 200 && (key == KeyEvent.VK_A || keyChar == 'B' || keyChar == 'b')) { // EXIT
+
                 }
 
                 repaint();

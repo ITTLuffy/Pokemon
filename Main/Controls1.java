@@ -32,7 +32,7 @@ public class Controls1 extends JPanel {
                     // Rimuovo il pannello home e aggiungo il precedente
                     JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls1.this);
                     frame.getContentPane().remove(Controls1.this);
-                    Help2 help = new Help2(); // creo il pannello dei controlli
+                    Help1 help = new Help1(); // creo il pannello dei controlli
                     frame.getContentPane().add(help); // aggiungo il nuovo pannello
                     frame.revalidate();
                     frame.repaint(); // forza il ridisegno

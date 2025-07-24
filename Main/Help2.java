@@ -32,17 +32,23 @@ public class Help2 extends JPanel {
 
                 if (key == KeyEvent.VK_UP && iconY > YMassimo) { // se è premuto su e non supera il massimo
                     iconY -= 50;
+                    System.out.println("UP pressed, iconY: " + iconY);
                 } else if (key == KeyEvent.VK_DOWN && iconY < YMinimo) { // se è premuto giù e non supera il minimo
                     iconY += 50;
-                } else if (iconY == 150 && keyChar == 'A' || keyChar == 'a') { // About this game
+                    System.out.println("DOWN pressed, iconY: " + iconY);
+                } else if ((keyChar == 'A' || keyChar == 'a') && iconY == 107) { // About this game
                     // Rimuovo il pannello home e aggiungo il prossimo
                     JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help2.this);
                     frame.getContentPane().remove(Help2.this);
                     Help3 lor = new Help3(); // creo il prossimo pannello dei controlli
                     frame.getContentPane().add(lor); // aggiungo il nuovo pannello
                     frame.revalidate();
-                } else if (iconY == 200 && (key == KeyEvent.VK_A || keyChar == 'B' || keyChar == 'b')) { // EXIT
-
+                } else if ((keyChar == 'A' || keyChar == 'a') && iconY == 157) { // EXIT
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help2.this);
+                    frame.getContentPane().remove(Help2.this);
+                    Controls1 lor = new Controls1(); // creo il prossimo pannello dei controlli
+                    frame.getContentPane().add(lor); // aggiungo il nuovo pannello
+                    frame.revalidate();
                 }
 
                 repaint();

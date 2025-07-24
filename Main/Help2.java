@@ -125,7 +125,7 @@ public class Help2 extends JPanel {
 
         // Rettangolo bianco con il testo in basso
         g.setColor(Color.white);
-        g.fillRect(50, getHeight() - 200, getWidth() - 100, 100);
+        g.fillRect(50, getHeight() - 220, getWidth() - 100, 140);
         g.setColor(Color.black);
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.drawString("Detailed descriptions are given", 60, getHeight() - 170);

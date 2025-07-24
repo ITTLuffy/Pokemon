@@ -123,6 +123,14 @@ public class Help2 extends JPanel {
         g.drawString("EXIT", 48, 198);
 
 
+        // Rettangolo bianco con il testo in basso
+        g.setColor(Color.white);
+        g.fillRect(50, getHeight() - 200, getWidth() - 100, 100);
+        g.setColor(Color.black);
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
+        g.drawString("Detailed descriptions are given", 60, getHeight() - 170);
+        g.drawString("about this game.", 60, getHeight() - 120);
+
     }
 
 }

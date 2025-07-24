@@ -8,10 +8,9 @@ import java.util.Objects;
 
 public class Help2 extends JPanel {
     private Image icon;
-    private int iconX = 2;
     private int iconY = 107;
-    private int YMassimo = iconY;
-    private int YMinimo = iconY + 50;
+    private final int YMassimo = iconY;
+    private final int YMinimo = iconY + 50;
 
     public Help2() {
         try {
@@ -113,6 +112,7 @@ public class Help2 extends JPanel {
         // Spiegazione al centro --> background grigio
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
+        int iconX = 2;
         g.drawImage(icon, iconX, iconY, 39, 62, null);
         g.drawString("About this game", 50, 150);
         g.drawString("EXIT", 50, 200);

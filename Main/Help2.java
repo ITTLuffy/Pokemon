@@ -38,7 +38,7 @@ public class Help2 extends JPanel {
                     // Rimuovo il pannello home e aggiungo il prossimo
                     JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help2.this);
                     frame.getContentPane().remove(Help2.this);
-                    LoR lor = new LoR(); // creo il prossimo pannello dei controlli
+                    Help3 lor = new Help3(); // creo il prossimo pannello dei controlli
                     frame.getContentPane().add(lor); // aggiungo il nuovo pannello
                     frame.revalidate();
                 } else if (iconY == 200 && (key == KeyEvent.VK_A || keyChar == 'B' || keyChar == 'b')) { // EXIT

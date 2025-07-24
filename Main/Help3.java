@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.Objects;
 
-public class LoR extends JPanel{
+public class Help3 extends JPanel{
     private Image icon;
     private int iconX = 2;
     private int iconY = 167;
@@ -14,7 +14,7 @@ public class LoR extends JPanel{
     private int YMinimo = iconY + 150;
 
 
-    public LoR() {
+    public Help3() {
         try {
             icon = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/white_arrow.png")));
         } catch (Exception e) {

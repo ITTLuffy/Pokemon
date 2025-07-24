@@ -29,18 +29,38 @@ public class Help3 extends JPanel{
             public void keyPressed(java.awt.event.KeyEvent e) {
                 super.keyPressed(e);
                 int key = e.getKeyCode(); // ottengo il carattere premuto
+                char keyChar = e.getKeyChar(); // ottengo il carattere premuto
 
                 if (key == KeyEvent.VK_UP && iconY > YMassimo) { // se è premuto su e non supera il massimo
                     iconY -= 50;
+                    System.out.println("UP pressed, iconY: " + iconY);
                 } else if (key == KeyEvent.VK_DOWN && iconY < YMinimo) { // se è premuto giù e non supera il minimo
                     iconY += 50;
+                    System.out.println("DOWN pressed, iconY: " + iconY);
+                } else if ((keyChar == 'A' || keyChar == 'a') && iconY == 107) { // About this game
+                    // Rimuovo il pannello home e aggiungo il prossimo
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help3.this);
+                    frame.getContentPane().remove(Help3.this);
+                    Help3 lor = new Help3(); // creo il prossimo pannello dei controlli
+                    frame.getContentPane().add(lor); // aggiungo il nuovo pannello
+                    frame.revalidate();
+                } else if ((keyChar == 'A' || keyChar == 'a') && iconY == 157) { // EXIT
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help3.this);
+                    frame.getContentPane().remove(Help3.this);
+                    Controls1 lor = new Controls1(); // creo il prossimo pannello dei controlli
+                    frame.getContentPane().add(lor); // aggiungo il nuovo pannello
+                    frame.revalidate();
+                } else if (keyChar == 'B' || keyChar == 'b') { // se è premuto B o b
+                    // Rimuovo il pannello home e aggiungo il precedente
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help3.this);
+                    frame.getContentPane().remove(Help3.this);
+                    Help2 help = new Help2(); // creo il pannello dei controlli
+                    frame.getContentPane().add(help); // aggiungo il nuovo pannello
+                    frame.revalidate();
                 }
 
                 repaint();
 
-                if (key == KeyEvent.VK_A || key == KeyEvent.VK_B) { // se è premuto A o invio
-
-                }
 
             }
         });

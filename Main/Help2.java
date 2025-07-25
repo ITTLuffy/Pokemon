@@ -50,6 +50,13 @@ public class Help2 extends JPanel {
                     Controls1 lor = new Controls1(); // creo il prossimo pannello dei controlli
                     frame.getContentPane().add(lor); // aggiungo il nuovo pannello
                     frame.revalidate();
+                } else if (keyChar == 'B' || keyChar == 'b') { // se è premuto B o b
+                    // Rimuovo il pannello home e aggiungo il precedente
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help2.this);
+                    frame.getContentPane().remove(Help2.this);
+                    Controls1 c1 = new Controls1(); // creo il pannello dei controlli
+                    frame.getContentPane().add(c1); // aggiungo il nuovo pannello
+                    frame.revalidate();
                 }
 
 
@@ -120,7 +127,6 @@ public class Help2 extends JPanel {
         g.setColor(Color.white);
         g.drawString("OK", 758, 45);
 
-
         g.setFont(new Font("Courier New", Font.BOLD, 30));
         g.setColor(Color.white);
         g.fillOval(830, 11, 40, 40);
@@ -134,7 +140,6 @@ public class Help2 extends JPanel {
         g.setColor(Color.white);
         g.drawString("END", 874, 45);
 
-
         // Spiegazione al centro --> background grigio
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
@@ -143,11 +148,9 @@ public class Help2 extends JPanel {
         g.drawString("About this game", 50, 150);
         g.drawString("EXIT", 50, 200);
 
-
         g.setColor(Color.white);
         g.drawString("About this game", 48, 148);
         g.drawString("EXIT", 48, 198);
-
 
         // Rettangolo bianco con il testo in basso
         g.setColor(Color.white);

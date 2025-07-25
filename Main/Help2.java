@@ -11,6 +11,8 @@ public class Help2 extends JPanel {
     private int iconY = 107;
     private final int YMassimo = iconY;
     private final int YMinimo = iconY + 50;
+    private String l1 = "Detailed descriptions are given";
+    private String l2 = "about this game.";
 
     public Help2() {
         try {
@@ -48,6 +50,15 @@ public class Help2 extends JPanel {
                     Controls1 lor = new Controls1(); // creo il prossimo pannello dei controlli
                     frame.getContentPane().add(lor); // aggiungo il nuovo pannello
                     frame.revalidate();
+                }
+
+
+                if (iconY == 107) {
+                    l1 = "Detailed descriptions are given";
+                    l2 = "about this game.";
+                } else if (iconY == 157) {
+                    l1 = "You can exit the game";
+                    l2 = "by pressing the EXIT button.";
                 }
 
                 repaint();
@@ -128,8 +139,8 @@ public class Help2 extends JPanel {
         g.fillRect(50, getHeight() - 220, getWidth() - 100, 140);
         g.setColor(Color.black);
         g.setFont(new Font("Courier New", Font.BOLD, 41));
-        g.drawString("Detailed descriptions are given", 60, getHeight() - 170);
-        g.drawString("about this game.", 60, getHeight() - 120);
+        g.drawString(l1, 60, getHeight() - 170);
+        g.drawString(l2, 60, getHeight() - 120);
 
     }
 

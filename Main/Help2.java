@@ -57,8 +57,8 @@ public class Help2 extends JPanel {
                     l1 = "Detailed descriptions are given";
                     l2 = "about this game.";
                 } else if (iconY == 157) {
-                    l1 = "You can exit the game";
-                    l2 = "by pressing the EXIT button.";
+                    l1 = "Select to exit the HELP System.";
+                    l2 = "";
                 }
 
                 repaint();

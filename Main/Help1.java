@@ -63,19 +63,19 @@ public class Help1 extends JPanel {
         g.setColor(Color.white);
         g.drawString("HELP", 10, 45);
 
-        // Scritta next con simbolino della A
-        g.setFont(new Font("Courier New", Font.BOLD, 50));
-        g.setColor(Color.gray);
-        g.drawString("NEXT", 860, 48);
-        g.setColor(Color.white);
-        g.drawString("NEXT", 858, 45);
-
         // A
         g.setFont(new Font("Courier New", Font.BOLD, 30));
         g.setColor(Color.white);
         g.fillOval(800, 11, 40, 40);
         g.setColor(Color.gray);
         g.drawString("A", 812, 40);
+
+        // Scritta next con simbolino della A
+        g.setFont(new Font("Courier New", Font.BOLD, 50));
+        g.setColor(Color.gray);
+        g.drawString("NEXT", 860, 48);
+        g.setColor(Color.white);
+        g.drawString("NEXT", 858, 45);
 
         // Spiegazione al centro --> background grigio
         g.setFont(new Font("Courier New", Font.BOLD, 41));

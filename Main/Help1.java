@@ -4,8 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.File;
 
 public class Help1 extends JPanel {
+    private File f;
     public Help1() {
         setFocusable(true); // ricevo input
         requestFocusInWindow(); // richiedo il focus quando viene mostrato

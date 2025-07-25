@@ -109,30 +109,30 @@ public class Help2 extends JPanel {
         // A
         g.setFont(new Font("Courier New", Font.BOLD, 30));
         g.setColor(Color.white);
-        g.fillOval(730, 11, 40, 40);
+        g.fillOval(710, 11, 40, 40);
         g.setColor(Color.gray);
-        g.drawString("A", 742, 40);
+        g.drawString("A", 722, 40);
 
         // Scritta ok con simbolino della A
         g.setFont(new Font("Courier New", Font.BOLD, 50));
         g.setColor(Color.gray);
-        g.drawString("OK", 780, 48);
+        g.drawString("OK", 760, 48);
         g.setColor(Color.white);
-        g.drawString("OK", 778, 45);
+        g.drawString("OK", 758, 45);
 
 
         g.setFont(new Font("Courier New", Font.BOLD, 30));
         g.setColor(Color.white);
-        g.fillOval(850, 11, 40, 40);
+        g.fillOval(830, 11, 40, 40);
         g.setColor(Color.gray);
-        g.drawString("B", 862, 40);
+        g.drawString("B", 842, 40);
 
         // Scritta end con simbolino della B
         g.setFont(new Font("Courier New", Font.BOLD, 50));
         g.setColor(Color.gray);
-        g.drawString("END", 896, 48);
+        g.drawString("END", 876, 48);
         g.setColor(Color.white);
-        g.drawString("END", 894, 45);
+        g.drawString("END", 874, 45);
 
 
         // Spiegazione al centro --> background grigio

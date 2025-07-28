@@ -37,12 +37,12 @@ public class Help3 extends JPanel{
                 } else if (key == KeyEvent.VK_DOWN && iconY < YMinimo) { // se è premuto giù e non supera il minimo
                     iconY += 50;
                     System.out.println("DOWN pressed, iconY: " + iconY);
-                } else if ((keyChar == 'A' || keyChar == 'a') && iconY == 107) { // About this game
+                } else if ((keyChar == 'A' || keyChar == 'a') && iconY == 167) { // The HELP System
                     // Rimuovo il pannello home e aggiungo il prossimo
                     JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help3.this);
                     frame.getContentPane().remove(Help3.this);
-                    Help3 lor = new Help3(); // creo il prossimo pannello dei controlli
-                    frame.getContentPane().add(lor); // aggiungo il nuovo pannello
+                    HELPSystem hs = new HELPSystem(); // creo il prossimo pannello dei controlli
+                    frame.getContentPane().add(hs); // aggiungo il nuovo pannello
                     frame.revalidate();
                 } else if ((keyChar == 'A' || keyChar == 'a') && iconY == 157) { // EXIT
                     JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help3.this);

@@ -1,4 +1,6 @@
 package Main;
 
-public class TheGame {
+import javax.swing.*;
+
+public class TheGame extends JPanel {
 }

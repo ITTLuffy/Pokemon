@@ -1,4 +1,6 @@
 package Main;
 
-public class WirelessAdapter {
+import javax.swing.*;
+
+public class WirelessAdapter extends JPanel {
 }

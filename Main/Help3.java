@@ -44,11 +44,11 @@ public class Help3 extends JPanel{
                     HELPSystem hs = new HELPSystem(); // creo il prossimo pannello dei controlli
                     frame.getContentPane().add(hs); // aggiungo il nuovo pannello
                     frame.revalidate();
-                } else if ((keyChar == 'A' || keyChar == 'a') && iconY == 157) { // EXIT
+                } else if ((keyChar == 'A' || keyChar == 'a') && iconY == 217) { // EXIT
                     JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help3.this);
                     frame.getContentPane().remove(Help3.this);
-                    Controls1 lor = new Controls1(); // creo il prossimo pannello dei controlli
-                    frame.getContentPane().add(lor); // aggiungo il nuovo pannello
+                    TheGame tg = new TheGame(); // creo il prossimo pannello dei controlli
+                    frame.getContentPane().add(tg); // aggiungo il nuovo pannello
                     frame.revalidate();
                 } else if (keyChar == 'B' || keyChar == 'b') { // se è premuto B o b
                     // Rimuovo il pannello home e aggiungo il precedente

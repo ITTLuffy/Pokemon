@@ -70,6 +70,27 @@ public class HELPSystem extends JPanel {
         g.setColor(Color.gray);
         g.drawString("B", 732, 40);
 
+        // Spiegazione al centro --> background grigio
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
+        g.setColor(Color.gray);
+        g.drawString("The help messages change depending on", 12, 200);
+        g.drawString("how much you have progressed in the", 12, 250);
+        g.drawString("game. They are designed to support you", 12, 300);
+        g.drawString("when you need them. If there is", 12, 350);
+        g.drawString("anything that you dont understand,", 12, 400);
+        g.drawString("please look up the HELP System!", 12, 450);
+
+        g.setColor(Color.white);
+        // Bianco
+        g.drawString("The help messages change depending on", 10, 198);
+        g.drawString("how much you have progressed in the", 10, 248);
+        g.drawString("game. They are designed to support you", 10, 298);
+        g.drawString("when you need them. If there is", 10, 348);
+        g.drawString("anything that you dont understand,", 10, 398);
+        g.drawString("please look up the HELP System!", 10, 448);
+
+
+
 
     }
 }

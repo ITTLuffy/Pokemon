@@ -13,6 +13,22 @@ public class HELPSystem extends JPanel {
             @Override
             public void keyPressed(java.awt.event.KeyEvent e) {
                 super.keyPressed(e);
+                char keyChar = e.getKeyChar(); // ottengo il carattere premuto
+
+                if (keyChar == 'A' || keyChar == 'a') { // Se è premuto A
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(HELPSystem.this);
+                    frame.getContentPane().remove(HELPSystem.this); // Rimuovo il pannello dei controlli
+                    Help3 h3 = new Help3(); // creo il prossimo pannello del gioco
+                    frame.getContentPane().add(h3); // aggiungo il nuovo pannello
+                    frame.revalidate(); // rendo visibile il nuovo pannello
+                } else if (keyChar == 'B' || keyChar == 'b') { // Se è premuto B
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(HELPSystem.this);
+                    frame.getContentPane().remove(HELPSystem.this); // Rimuovo il pannello dei controlli
+                    Help3 h3 = new Help3(); // creo il prossimo pannello della home page
+                    frame.getContentPane().add(h3); // aggiungo il nuovo pannello
+                    frame.revalidate(); // rendo visibile il nuovo pannello
+                }
+
             }
         });
 

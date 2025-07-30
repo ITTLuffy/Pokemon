@@ -56,6 +56,12 @@ public class Help3 extends JPanel{
                     WirelessAdapter wa = new WirelessAdapter(); // creo il prossimo pannello dei controlli
                     frame.getContentPane().add(wa); // aggiungo il nuovo pannello
                     frame.revalidate();
+                } else if ((keyChar == 'A' || keyChar == 'a') && iconY == 317) { // EXIT
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help3.this);
+                    frame.getContentPane().remove(Help3.this);
+                    Help2 h2 = new Help2(); // creo il prossimo pannello dei controlli
+                    frame.getContentPane().add(h2); // aggiungo il nuovo pannello
+                    frame.revalidate();
                 } else if (keyChar == 'B' || keyChar == 'b') { // se è premuto B o b
                     // Rimuovo il pannello home e aggiungo il precedente
                     JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Help3.this);
@@ -67,8 +73,8 @@ public class Help3 extends JPanel{
 
                 repaint();
 
-
             }
+
         });
 
     }

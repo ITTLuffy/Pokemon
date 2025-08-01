@@ -64,5 +64,16 @@ public class Controls2 extends JPanel {
         g.drawString("B", 812, 40);
 
 
+        // Spiegazione al centro
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
+        g.setColor(Color.gray);
+        g.drawString("Moves the main character.", 200, 270);
+        g.drawString("Also used to choose various data", 200, 320);
+        g.drawString("headings.", 200, 370);
+        g.setColor(Color.white);
+        g.drawString("Moves the main character.", 198, 268);
+        g.drawString("Also used to choose various data", 198, 318);
+        g.drawString("headings.", 198, 368);
+
     }
 }

@@ -8,6 +8,7 @@ import java.util.Objects;
 
 public class Help2 extends JPanel {
     private Image icon;
+    private Image icon2;
     private int iconY = 107;
     private final int YMassimo = iconY;
     private final int YMinimo = iconY + 50;
@@ -17,6 +18,7 @@ public class Help2 extends JPanel {
     public Help2() {
         try {
             icon = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/white_arrow.png")));
+            icon2 = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/Pick.png")));
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -116,6 +118,18 @@ public class Help2 extends JPanel {
         // A
         g.setFont(new Font("Courier New", Font.BOLD, 30));
         g.setColor(Color.white);
+        g.drawImage(icon2, 530, 9, 37, 47, null);
+
+        // Scritta ok con simbolino della A
+        g.setFont(new Font("Courier New", Font.BOLD, 50));
+        g.setColor(Color.gray);
+        g.drawString("PICK", 575, 48);
+        g.setColor(Color.white);
+        g.drawString("PICK", 573, 45);
+
+        // A
+        g.setFont(new Font("Courier New", Font.BOLD, 30));
+        g.setColor(Color.white);
         g.fillOval(710, 11, 40, 40);
         g.setColor(Color.gray);
         g.drawString("A", 722, 40);
@@ -127,6 +141,7 @@ public class Help2 extends JPanel {
         g.setColor(Color.white);
         g.drawString("OK", 758, 45);
 
+        // B
         g.setFont(new Font("Courier New", Font.BOLD, 30));
         g.setColor(Color.white);
         g.fillOval(830, 11, 40, 40);

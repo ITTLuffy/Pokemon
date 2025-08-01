@@ -67,13 +67,13 @@ public class Controls2 extends JPanel {
         // Spiegazione al centro
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
-        g.drawString("Moves the main character.", 200, 270);
-        g.drawString("Also used to choose various data", 200, 320);
-        g.drawString("headings.", 200, 370);
+        g.drawString("Moves the main character.", 180, 270);
+        g.drawString("Also used to choose various data", 180, 320);
+        g.drawString("headings.", 180, 370);
         g.setColor(Color.white);
-        g.drawString("Moves the main character.", 198, 268);
-        g.drawString("Also used to choose various data", 198, 318);
-        g.drawString("headings.", 198, 368);
+        g.drawString("Moves the main character.", 178, 268);
+        g.drawString("Also used to choose various data", 178, 318);
+        g.drawString("headings.", 178, 368);
 
     }
 }

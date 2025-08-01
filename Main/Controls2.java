@@ -3,8 +3,8 @@ package Main;
 import javax.swing.*;
 import java.awt.*;
 
-public class Controls3 extends JPanel {
-    public Controls3() {
+public class Controls2 extends JPanel {
+    public Controls2() {
 
     }
 

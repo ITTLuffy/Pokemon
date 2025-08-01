@@ -115,7 +115,7 @@ public class Help2 extends JPanel {
         g.setColor(Color.white);
         g.drawString("", 858, 45);
 
-        // A
+        // PICK
         g.setFont(new Font("Courier New", Font.BOLD, 30));
         g.setColor(Color.white);
         g.drawImage(icon2, 530, 9, 37, 47, null);

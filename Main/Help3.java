@@ -8,6 +8,7 @@ import java.util.Objects;
 
 public class Help3 extends JPanel{
     private Image icon;
+    private Image icon2 = null;
     private int iconX = 2;
     private int iconY = 167;
     private int YMassimo = iconY;
@@ -17,6 +18,7 @@ public class Help3 extends JPanel{
     public Help3() {
         try {
             icon = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/white_arrow.png")));
+            icon2 = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/Pick.png")));
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -111,6 +113,18 @@ public class Help3 extends JPanel{
         g.drawString("HELP", 12, 48);
         g.setColor(Color.white);
         g.drawString("HELP", 10, 45);
+
+        // PICK
+        g.setFont(new Font("Courier New", Font.BOLD, 30));
+        g.setColor(Color.white);
+        g.drawImage(icon2, 530, 9, 37, 47, null);
+
+        // Scritta ok con simbolino della A
+        g.setFont(new Font("Courier New", Font.BOLD, 50));
+        g.setColor(Color.gray);
+        g.drawString("PICK", 575, 48);
+        g.setColor(Color.white);
+        g.drawString("PICK", 573, 45);
 
         // A
         g.setFont(new Font("Courier New", Font.BOLD, 30));

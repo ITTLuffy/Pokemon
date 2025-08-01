@@ -9,10 +9,9 @@ import java.util.Objects;
 public class Help3 extends JPanel{
     private Image icon;
     private Image icon2 = null;
-    private int iconX = 2;
     private int iconY = 167;
-    private int YMassimo = iconY;
-    private int YMinimo = iconY + 150;
+    private final int YMassimo = iconY;
+    private final int YMinimo = iconY + 150;
 
 
     public Help3() {
@@ -158,6 +157,7 @@ public class Help3 extends JPanel{
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
         g.drawString("About this game", 12, 130);
+        int iconX = 2;
         g.drawImage(icon, iconX, iconY, 39, 62, null);
         g.drawString("The HELP System", 50, 210);
         g.drawString("The game", 50, 260);

@@ -5,7 +5,34 @@ import java.awt.*;
 
 public class Controls2 extends JPanel {
     public Controls2() {
+        setFocusable(true); // ricevo input
+        requestFocusInWindow(); // richiedo il focus quando viene mostrato
 
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            @Override
+            public void keyPressed(java.awt.event.KeyEvent e) {
+                super.keyPressed(e);
+                char key = e.getKeyChar(); // ottengo il carattere premuto
+
+                if (key == 'a' || key == 'A') {
+                } else if (key == 'b' || key == 'B') { // se è premuto B o b
+                    // Rimuovo il pannello home e aggiungo il precedente
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls2.this);
+                    frame.getContentPane().remove(Controls2.this);
+                    Controls1 c1 = new Controls1(); // creo il pannello dei controlli
+                    frame.getContentPane().add(c1); // aggiungo il nuovo pannello
+                    frame.revalidate();
+                    frame.repaint(); // forza il ridisegno
+                }
+            }
+        });
+
+    }
+
+    @Override
+    public void addNotify() {
+        super.addNotify();
+        requestFocusInWindow(); // il focus funziona meglio qui
     }
 
     @Override

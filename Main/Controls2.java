@@ -20,6 +20,13 @@ public class Controls2 extends JPanel {
                 char key = e.getKeyChar(); // ottengo il carattere premuto
 
                 if (key == 'a' || key == 'A') {
+                    // Rimuovo il pannello home e aggiungo il precedente
+                    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls2.this);
+                    frame.getContentPane().remove(Controls2.this);
+                    Controls3 c3 = new Controls3(); // creo il pannello dei controlli
+                    frame.getContentPane().add(c3); // aggiungo il nuovo pannello
+                    frame.revalidate();
+                    frame.repaint(); // forza il ridisegno
                 } else if (key == 'b' || key == 'B') { // se è premuto B o b
                     // Rimuovo il pannello home e aggiungo il precedente
                     JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls2.this);

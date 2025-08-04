@@ -1,9 +1,13 @@
 package Main;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.util.Objects;
 
 public class Controls2 extends JPanel {
+    private Image icon = null;
+
     public Controls2() {
         setFocusable(true); // ricevo input
         requestFocusInWindow(); // richiedo il focus quando viene mostrato
@@ -26,6 +30,12 @@ public class Controls2 extends JPanel {
                 }
             }
         });
+
+        try { // carico l'icona
+            icon = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/Controllers.png")));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 

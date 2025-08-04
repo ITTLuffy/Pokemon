@@ -112,5 +112,17 @@ public class Controls2 extends JPanel {
         g.drawString("Also used to choose various data", 178, 168);
         g.drawString("headings.", 178, 218);
 
+        // Spiegazione al centro
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
+        g.setColor(Color.gray);
+        g.drawString("Used to confirm a choice, check", 180, 320);
+        g.drawString("things, chat, and scroll text.", 180, 370);
+        g.setColor(Color.white);
+        g.drawString("Used to confirm a choice, check", 178, 318);
+        g.drawString("things, chat, and scroll text.", 178, 368);
+
+        // Icona del controller
+        g.drawImage(icon, 20, 80, 108, 440,null);
+
     }
 }

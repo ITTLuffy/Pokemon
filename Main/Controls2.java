@@ -7,6 +7,7 @@ import java.util.Objects;
 
 public class Controls2 extends JPanel {
     private Image icon = null;
+    private Image freccia = null;
 
     public Controls2() {
         setFocusable(true); // ricevo input
@@ -33,6 +34,7 @@ public class Controls2 extends JPanel {
 
         try { // carico l'icona
             icon = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/Controllers.png")));
+            freccia = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/Arrow.png")));
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -133,6 +135,9 @@ public class Controls2 extends JPanel {
 
         // Icona del controller
         g.drawImage(icon, 20, 80, 108, 440,null);
+
+        // Icona della freccia
+        g.drawImage(freccia, 870, 500, null); // disegno l'icona
 
     }
 }

@@ -122,26 +122,26 @@ public class Controls3 extends JPanel {
         // Spiegazione al centro
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
-        g.drawString("Used to shift items and to use", 180, 320);
-        g.drawString("a registered item.", 180, 370);
+        g.drawString("Used to shift items and to use", 180, 270);
+        g.drawString("a registered item.", 180, 320);
         g.setColor(Color.white);
-        g.drawString("Used to shift items and to use", 178, 318);
-        g.drawString("a registered item.", 178, 368);
+        g.drawString("Used to shift items and to use", 178, 268);
+        g.drawString("a registered item.", 178, 318);
 
         // Spiegazione al centro
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
-        g.drawString("If you need help paling the", 180, 460);
-        g.drawString("game, or on how to do things,", 180, 510);
+        g.drawString("If you need help paling the", 180, 410);
+        g.drawString("game, or on how to do things,", 180, 460);
         g.drawString("press the L or R Button.", 180, 510);
         g.setColor(Color.white);
-        g.drawString("If you need help paling the", 178, 458);
-        g.drawString("game, or on how to do things,", 178, 508);
+        g.drawString("If you need help paling the", 178, 408);
+        g.drawString("game, or on how to do things,", 178, 458);
         g.drawString("press the L or R Button.", 178, 508);
 
 
         // Icona del controller
-        g.drawImage(controls, 20, 80, 150, 371,null);
+        g.drawImage(controls, 20, 85, 150, 371,null);
 
         // Icona della freccia
         g.drawImage(freccia, 870, 500, null); // disegno l'icona

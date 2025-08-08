@@ -1,11 +1,15 @@
 package Main;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.util.Objects;
 
 public class Controls3 extends JPanel {
+    private Image controls = null;
+    private Image freccia = null;
     public Controls3() {
         setFocusable(true); // ricevo input
         requestFocusInWindow(); // richiedo il focus quando viene mostrato
@@ -34,6 +38,14 @@ public class Controls3 extends JPanel {
                 }
             }
         });
+
+        try { // carico l'icona
+            controls = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/Controls3_things.png")));
+            freccia = ImageIO.read(Objects.requireNonNull(Drawer.class.getResource("/Entities/Tutorial/Arrow.png")));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
 
     }
 
@@ -97,6 +109,43 @@ public class Controls3 extends JPanel {
         g.fillOval(800, 11, 40, 40);
         g.setColor(Color.gray);
         g.drawString("B", 812, 40);
+
+        // Spiegazione al centro
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
+        g.setColor(Color.gray);
+        g.drawString("Moves the main character.", 180, 120);
+        g.drawString("Also used to choose various data", 180, 170);
+        g.drawString("headings.", 180, 220);
+        g.setColor(Color.white);
+        g.drawString("Moves the main character.", 178, 118);
+        g.drawString("Also used to choose various data", 178, 168);
+        g.drawString("headings.", 178, 218);
+
+        // Spiegazione al centro
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
+        g.setColor(Color.gray);
+        g.drawString("Used to confirm a choice, check", 180, 320);
+        g.drawString("things, chat, and scroll text.", 180, 370);
+        g.setColor(Color.white);
+        g.drawString("Used to confirm a choice, check", 178, 318);
+        g.drawString("things, chat, and scroll text.", 178, 368);
+
+        // Spiegazione al centro
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
+        g.setColor(Color.gray);
+        g.drawString("Used to exit, cancel a choice,", 180, 460);
+        g.drawString("and cancel a mode.", 180, 510);
+        g.setColor(Color.white);
+        g.drawString("Used to exit, cancel a choice,", 178, 458);
+        g.drawString("and cancel a mode.", 178, 508);
+
+
+        // Icona del controller
+        g.drawImage(controls, 20, 80, 108, 440,null);
+
+        // Icona della freccia
+        g.drawImage(freccia, 870, 500, null); // disegno l'icona
+
 
 
     }

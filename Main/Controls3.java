@@ -48,6 +48,30 @@ public class Controls3 extends JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
+        // Sfondo azzurro
+        g.setColor(new Color(0, 115, 181));
+        g.fillRect(0, 0, getWidth(), getHeight());
+
+        // Striscia che separa in alto
+        g.setColor(new Color(0, 77, 107));
+        g.fillRect(0, 60, getWidth(), 8);
+        g.setColor(new Color(0, 160, 209));
+        g.fillRect(0, 68, getWidth(), 3);
+
+        // Effetto finale in basso
+        g.setColor(new Color(0, 106, 122));
+        g.fillRect(0, getHeight() - 13, getWidth(), 5);
+        g.setColor(new Color(0, 77, 107));
+        g.fillRect(0, getHeight() - 8, getWidth(), 8);
+
+        // Scritta controls in alto a sinistra
+        g.setFont(new Font("Courier New", Font.BOLD, 50));
+        g.setColor(Color.gray);
+        g.drawString("CONTROLS", 12, 48);
+        g.setColor(Color.white);
+        g.drawString("CONTROLS", 10, 45);
+
+
     }
 
 }

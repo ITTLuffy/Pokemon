@@ -113,31 +113,31 @@ public class Controls3 extends JPanel {
         // Spiegazione al centro
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
-        g.drawString("Moves the main character.", 180, 120);
-        g.drawString("Also used to choose various data", 180, 170);
-        g.drawString("headings.", 180, 220);
+        g.drawString("Press this button to open the", 180, 120);
+        g.drawString("MENU.", 180, 170);
         g.setColor(Color.white);
-        g.drawString("Moves the main character.", 178, 118);
-        g.drawString("Also used to choose various data", 178, 168);
-        g.drawString("headings.", 178, 218);
+        g.drawString("Press this button to open the", 178, 118);
+        g.drawString("MENU.", 178, 168);
 
         // Spiegazione al centro
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
-        g.drawString("Used to confirm a choice, check", 180, 320);
-        g.drawString("things, chat, and scroll text.", 180, 370);
+        g.drawString("Used to shift items and to use", 180, 320);
+        g.drawString("a registered item.", 180, 370);
         g.setColor(Color.white);
-        g.drawString("Used to confirm a choice, check", 178, 318);
-        g.drawString("things, chat, and scroll text.", 178, 368);
+        g.drawString("Used to shift items and to use", 178, 318);
+        g.drawString("a registered item.", 178, 368);
 
         // Spiegazione al centro
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
-        g.drawString("Used to exit, cancel a choice,", 180, 460);
-        g.drawString("and cancel a mode.", 180, 510);
+        g.drawString("If you need help paling the", 180, 460);
+        g.drawString("game, or on how to do things,", 180, 510);
+        g.drawString("press the L or R Button.", 180, 510);
         g.setColor(Color.white);
-        g.drawString("Used to exit, cancel a choice,", 178, 458);
-        g.drawString("and cancel a mode.", 178, 508);
+        g.drawString("If you need help paling the", 178, 458);
+        g.drawString("game, or on how to do things,", 178, 508);
+        g.drawString("press the L or R Button.", 178, 508);
 
 
         // Icona del controller

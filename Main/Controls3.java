@@ -141,7 +141,7 @@ public class Controls3 extends JPanel {
 
 
         // Icona del controller
-        g.drawImage(controls, 20, 80, 108, 440,null);
+        g.drawImage(controls, 20, 80, 150, 371,null);
 
         // Icona della freccia
         g.drawImage(freccia, 870, 500, null); // disegno l'icona

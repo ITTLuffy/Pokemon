@@ -6,6 +6,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class Controls4 extends JPanel {
+    private Image pikachu = null;
     public Controls4() {
         setFocusable(true); // ricevo input
         requestFocusInWindow(); // richiedo il focus quando viene mostrato
@@ -34,6 +35,12 @@ public class Controls4 extends JPanel {
                 }
             }
         });
+
+        try {
+            pikachu = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Entities/Tutorial/Pikachu.png"));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 
@@ -64,7 +71,8 @@ public class Controls4 extends JPanel {
         g.setColor(new Color(206, 239, 247));
         g.fillRect(16, 114, getWidth() - 32, getHeight() - 126);
 
-
+        // Immagine
+        g.drawImage(pikachu, 20, 10, 110, 128, this);
 
 
     }

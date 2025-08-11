@@ -22,10 +22,14 @@ public class Controls4 extends JPanel {
 
         // Striscia blu violaceo
         g.setColor(new Color(82, 99, 181));
-        g.fillRect(0, 71, getWidth(), 35);
-        g.fillRect(0, 106, 4, getHeight());
-        g.fillRect(getWidth() - 4, 106, 4, getHeight());
-        g.fillRect(0, getHeight() - 4, getWidth(), 4);
+        g.fillRect(0, 71, getWidth(), getHeight());
+
+        // Quadrato grigio intorno alle scritte
+        g.setColor(new Color(107, 107, 107));
+        g.fillRect(16, 106, getWidth() - 32, 8);
+        g.fillRect(16, getHeight() - 12, getWidth() - 32, 8);
+        g.fillRect(8, 114, 8, getHeight() - 126);
+        g.fillRect(getWidth() - 16, 114, 8, getHeight() - 126);
 
 
     }

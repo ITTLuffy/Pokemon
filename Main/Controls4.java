@@ -31,6 +31,12 @@ public class Controls4 extends JPanel {
         g.fillRect(8, 114, 8, getHeight() - 126);
         g.fillRect(getWidth() - 16, 114, 8, getHeight() - 126);
 
+        // Quadrato blu chiaro
+        g.setColor(new Color(206, 239, 247));
+        g.fillRect(16, 114, getWidth() - 32, getHeight() - 126);
+
+
+
 
     }
 }

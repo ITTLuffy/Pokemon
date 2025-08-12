@@ -87,6 +87,16 @@ public class Controls4 extends JPanel {
         g.setColor(Color.gray);
         g.drawString("A", 812, 40);
 
+        // Spiegazione al centro
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
+        g.setColor(Color.gray);
+        g.drawString("In the world which you are about to", 90, 170);
+        g.drawString("enter, you will embark on a grand", 90, 220);
+        g.drawString("adventure with you as the hero.", 90, 270);
+
+
+
+
 
 
     }

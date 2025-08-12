@@ -95,6 +95,11 @@ public class Controls4 extends JPanel {
         g.drawString("adventure with you as the hero.", 90, 270);
 
 
+        g.drawString("Speak to people and check things", 90, 370);
+        g.drawString("wherever you go, be it towns, roads,", 90, 420);
+        g.drawString("or caves. Gather information and ", 90, 470);
+        g.drawString("hints from every source.", 90, 520);
+
 
 
 

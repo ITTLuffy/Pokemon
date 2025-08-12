@@ -7,6 +7,7 @@ import java.awt.event.KeyEvent;
 
 public class Controls4 extends JPanel {
     private Image pikachu = null;
+    private Image freccia = null;
     public Controls4() {
         setFocusable(true); // ricevo input
         requestFocusInWindow(); // richiedo il focus quando viene mostrato
@@ -38,6 +39,7 @@ public class Controls4 extends JPanel {
 
         try {
             pikachu = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Entities/Tutorial/Pikachu.png"));
+            freccia = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Entities/Tutorial/Arrow.png"));
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -73,6 +75,9 @@ public class Controls4 extends JPanel {
 
         // Immagine
         g.drawImage(pikachu, 20, 10, 110, 128, this);
+
+        // Freccia
+        g.drawImage(freccia, 870, 500, null); // disegno l'icona
 
         g.setFont(new Font("Courier New", Font.BOLD, 50));
         g.setColor(Color.gray);

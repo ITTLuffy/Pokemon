@@ -74,6 +74,20 @@ public class Controls4 extends JPanel {
         // Immagine
         g.drawImage(pikachu, 20, 10, 110, 128, this);
 
+        g.setFont(new Font("Courier New", Font.BOLD, 50));
+        g.setColor(Color.gray);
+        g.drawString("NEXT", 858, 48);
+        g.setColor(Color.white);
+        g.drawString("NEXT", 856, 45);
+
+        // A
+        g.setFont(new Font("Courier New", Font.BOLD, 30));
+        g.setColor(Color.white);
+        g.fillOval(800, 11, 40, 40);
+        g.setColor(Color.gray);
+        g.drawString("A", 812, 40);
+
+
 
     }
 }

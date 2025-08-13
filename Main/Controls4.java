@@ -105,9 +105,5 @@ public class Controls4 extends JPanel {
         g.drawString("or caves. Gather information and ", 60, 470);
         g.drawString("hints from every source.", 60, 520);
 
-
-
-
-
     }
 }

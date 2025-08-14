@@ -47,4 +47,11 @@ public class Controls6 extends JPanel {
 
     }
 
+    @Override
+    public void addNotify() {
+        super.addNotify();
+        requestFocusInWindow(); // il focus funziona meglio qui
+    }
+
+
 }

@@ -116,13 +116,13 @@ public class Controls5 extends JPanel {
         // Spiegazione al centro
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
-        g.drawString("New paths will open to you by helping", 60, 170);
-        g.drawString("people in need, overcoming challenges,", 60, 220);
-        g.drawString("and solving mysteries.", 60, 270);
+        g.drawString("New paths will open to you by helping", 25, 170);
+        g.drawString("people in need, overcoming challenges,", 25, 220);
+        g.drawString("and solving mysteries.", 25, 270);
 
-        g.drawString("At times, you will be challenged by", 60, 370);
-        g.drawString("others and attacked by wild creatures.", 60, 420);
-        g.drawString("Be brave and keep pushing on.", 60, 470);
+        g.drawString("At times, you will be challenged by", 25, 370);
+        g.drawString("others and attacked by wild creatures.", 25, 420);
+        g.drawString("Be brave and keep pushing on.", 25, 470);
 
 
 

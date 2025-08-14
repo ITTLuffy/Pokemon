@@ -102,15 +102,15 @@ public class Controls4 extends JPanel {
         // Spiegazione al centro
         g.setFont(new Font("Courier New", Font.BOLD, 41));
         g.setColor(Color.gray);
-        g.drawString("In the world which you are about to", 40, 170);
-        g.drawString("enter, you will embark on a grand", 40, 220);
-        g.drawString("adventure with you as the hero.", 40, 270);
+        g.drawString("In the world which you are about to", 25, 170);
+        g.drawString("enter, you will embark on a grand", 25, 220);
+        g.drawString("adventure with you as the hero.", 25, 270);
 
 
-        g.drawString("Speak to people and check things", 40, 370);
-        g.drawString("wherever you go, be it towns, roads,", 40, 420);
-        g.drawString("or caves. Gather information and ", 40, 470);
-        g.drawString("hints from every source.", 40, 520);
+        g.drawString("Speak to people and check things", 25, 370);
+        g.drawString("wherever you go, be it towns, roads,", 25, 420);
+        g.drawString("or caves. Gather information and ", 25, 470);
+        g.drawString("hints from every source.", 25, 520);
 
     }
 }

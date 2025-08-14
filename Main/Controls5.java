@@ -22,7 +22,7 @@ public class Controls5 extends JPanel {
                     // Rimuovo il pannello home e aggiungo il prossimo
                     JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Controls5.this);
                     frame.getContentPane().remove(Controls5.this);
-                    Controls5 c3 = new Controls5(); // creo il prossimo pannello dei controlli
+                    Controls6 c3 = new Controls6(); // creo il prossimo pannello dei controlli
                     frame.getContentPane().add(c3); // aggiungo il nuovo pannello
                     frame.revalidate();
                     frame.repaint(); // forza il ridisegno

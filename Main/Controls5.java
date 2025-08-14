@@ -120,6 +120,10 @@ public class Controls5 extends JPanel {
         g.drawString("people in need, overcoming challenges,", 60, 220);
         g.drawString("and solving mysteries.", 60, 270);
 
+        g.drawString("At times, you will be challenged by", 60, 370);
+        g.drawString("others and attacked by wild creatures.", 60, 420);
+        g.drawString("Be brave and keep pushing on.", 60, 470);
+
 
 
     }

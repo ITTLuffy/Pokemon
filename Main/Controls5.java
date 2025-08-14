@@ -113,6 +113,13 @@ public class Controls5 extends JPanel {
         g.setColor(Color.gray);
         g.drawString("B", 812, 40);
 
+        // Spiegazione al centro
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
+        g.setColor(Color.gray);
+        g.drawString("New paths will open to you by helping", 60, 170);
+        g.drawString("people in need, overcoming challenges,", 60, 220);
+        g.drawString("and solving mysteries.", 60, 270);
+
 
 
     }

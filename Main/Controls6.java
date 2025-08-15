@@ -80,6 +80,11 @@ public class Controls6 extends JPanel {
         g.setColor(new Color(206, 239, 247));
         g.fillRect(16, 114, getWidth() - 32, getHeight() - 126);
 
+        // Immagine
+        g.drawImage(pikachu, 20, 10, 110, 128, this);
+
+        // Freccia
+        g.drawImage(freccia, 870, 500, null); // disegno l'icona
 
     }
 

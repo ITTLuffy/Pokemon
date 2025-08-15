@@ -122,6 +122,13 @@ public class Controls6 extends JPanel {
         g.drawString("of people and achieve personal growth.", 25, 270);
         g.drawString("That is our biggest objective.", 25, 320);
 
+
+        g.drawString("Press the A Button, and let your.", 25, 420);
+        g.drawString("adventure begin!", 25, 470);
+
+
+
+
     }
 
 

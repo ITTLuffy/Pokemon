@@ -114,6 +114,14 @@ public class Controls6 extends JPanel {
         g.setColor(Color.gray);
         g.drawString("B", 812, 40);
 
+        // Spiegazione al centro
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
+        g.setColor(Color.gray);
+        g.drawString("Through your adventure, we hope", 25, 170);
+        g.drawString("that you will interact with all sorts", 25, 220);
+        g.drawString("of people and achieve personal growth.", 25, 270);
+        g.drawString("That is our biggest objective.", 25, 320);
+
     }
 
 

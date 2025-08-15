@@ -86,6 +86,20 @@ public class Controls6 extends JPanel {
         // Freccia
         g.drawImage(freccia, 870, 500, null); // disegno l'icona
 
+        // Scritta next con simbolino della A
+        g.setFont(new Font("Courier New", Font.BOLD, 50));
+        g.setColor(Color.gray);
+        g.drawString("NEXT", 660, 48);
+        g.setColor(Color.white);
+        g.drawString("NEXT", 658, 45);
+
+        // A
+        g.setFont(new Font("Courier New", Font.BOLD, 30));
+        g.setColor(Color.white);
+        g.fillOval(600, 11, 40, 40);
+        g.setColor(Color.gray);
+        g.drawString("A", 612, 40);
+
     }
 
 

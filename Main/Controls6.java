@@ -100,6 +100,20 @@ public class Controls6 extends JPanel {
         g.setColor(Color.gray);
         g.drawString("A", 612, 40);
 
+        // Scritta next con simbolino della B
+        g.setFont(new Font("Courier New", Font.BOLD, 50));
+        g.setColor(Color.gray);
+        g.drawString("BACK", 858, 48);
+        g.setColor(Color.white);
+        g.drawString("BACK", 856, 45);
+
+        // B
+        g.setFont(new Font("Courier New", Font.BOLD, 30));
+        g.setColor(Color.white);
+        g.fillOval(800, 11, 40, 40);
+        g.setColor(Color.gray);
+        g.drawString("B", 812, 40);
+
     }
 
 

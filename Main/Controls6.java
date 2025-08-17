@@ -125,10 +125,6 @@ public class Controls6 extends JPanel {
 
         g.drawString("Press the A Button, and let your.", 25, 420);
         g.drawString("adventure begin!", 25, 470);
-
-
-
-
     }
 
 

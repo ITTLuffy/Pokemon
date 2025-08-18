@@ -47,4 +47,11 @@ public class Pres1 extends JPanel {
 
     }
 
+    @Override
+    public void addNotify() {
+        super.addNotify();
+        requestFocusInWindow(); // il focus funziona meglio qui
+    }
+
+
 }

@@ -57,6 +57,9 @@ public class Pres1 extends JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
+        // Freccia
+        g.drawImage(freccia, 870, 500, null); // disegno l'icona
+
     }
 
 }

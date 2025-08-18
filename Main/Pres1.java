@@ -30,7 +30,7 @@ public class Pres1 extends JPanel {
                 } else if (key == 'b' || key == 'B') {
                     JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(Pres1.this);
                     frame.getContentPane().remove(Pres1.this);
-                    Controls5 c2 = new Controls5(); // creo il pannello dei controlli
+                    Controls6 c2 = new Controls6(); // creo il pannello dei controlli
                     frame.getContentPane().add(c2); // aggiungo il nuovo pannello
                     frame.revalidate();
                     frame.repaint(); // forza il ridisegno

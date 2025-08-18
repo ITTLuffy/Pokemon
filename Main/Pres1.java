@@ -53,5 +53,10 @@ public class Pres1 extends JPanel {
         requestFocusInWindow(); // il focus funziona meglio qui
     }
 
+    @Override
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+    }
 
 }

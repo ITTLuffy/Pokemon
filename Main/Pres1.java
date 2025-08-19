@@ -60,6 +60,10 @@ public class Pres1 extends JPanel {
         // Freccia
         g.drawImage(freccia, 870, 500, null); // disegno l'icona
 
+        // Sfondo azzurro
+        g.setColor(new Color(0, 115, 181));
+        g.fillRect(0, 0, getWidth(), getHeight());
+
     }
 
 }

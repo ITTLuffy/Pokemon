@@ -87,6 +87,12 @@ public class Pres1 extends JPanel {
 
         g.drawImage(oak, (getWidth() / 2 - 421 / 2), 0, 421, 456, this);
 
+        // Scritta
+        g.setColor(new Color(231, 247, 239));
+        g.setFont(new Font("Courier New", Font.BOLD, 30));
+        g.fillRect(50, getHeight() - 150, getWidth() - 100, 120);
+
+
 
 
 

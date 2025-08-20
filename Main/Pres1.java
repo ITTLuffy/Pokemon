@@ -60,9 +60,35 @@ public class Pres1 extends JPanel {
         // Freccia
         g.drawImage(freccia, 870, 500, null); // disegno l'icona
 
-        // Sfondo azzurro
-        g.setColor(new Color(0, 115, 181));
-        g.fillRect(0, 0, getWidth(), getHeight());
+        // Pezzo bianco
+        g.setColor(new Color(231, 247, 239));
+        g.fillRect(0, 0, getWidth(), getHeight() / 2 - 50);
+
+        g.setColor(new Color(206, 231, 222));
+        g.fillRect(0, getHeight() / 2 - 50, getWidth(), 20);
+
+        g.setColor(new Color(181, 214, 206));
+        g.fillRect(0, getHeight() / 2 - 30, getWidth(), 20);
+
+        g.setColor(new Color(156, 198, 189));
+        g.fillRect(0, getHeight() / 2 - 10, getWidth(), 20);
+
+        g.setColor(new Color(132, 181, 173));
+        g.fillRect(0, getHeight() / 2 + 10, getWidth(), 20);
+
+        g.setColor(new Color(107, 165, 156));
+        g.fillRect(0, getHeight() / 2 + 30, getWidth(), 20);
+
+        g.setColor(new Color(82, 148, 140));
+        g.fillRect(0, getHeight() / 2 + 50, getWidth(), 20);
+
+        g.setColor(new Color(66, 140, 132));
+        g.fillRect(0, getHeight() / 2 + 70, getWidth(), getHeight() - (getHeight() / 2 + 70));
+
+
+
+
+
 
     }
 

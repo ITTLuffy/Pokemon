@@ -57,9 +57,6 @@ public class Pres1 extends JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        // Freccia
-        g.drawImage(freccia, 870, 500, null); // disegno l'icona
-
         // Pezzo bianco
         g.setColor(new Color(231, 247, 239));
         g.fillRect(0, 0, getWidth(), getHeight() / 2 - 50);
@@ -97,10 +94,8 @@ public class Pres1 extends JPanel {
         g.drawString("Hello, there!", 60, getHeight() - 105);
         g.drawString("Glad to meet you!", 60, getHeight() - 55);
 
-
-
-
-
+        // Freccia
+        g.drawImage(freccia, 485, 482, null); // disegno l'icona
 
 
     }

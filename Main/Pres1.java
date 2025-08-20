@@ -85,7 +85,7 @@ public class Pres1 extends JPanel {
         g.setColor(new Color(66, 140, 132));
         g.fillRect(0, getHeight() / 2 + 70, getWidth(), getHeight() - (getHeight() / 2 + 70));
 
-        g.drawImage(oak, (getWidth() / 2 - 421 / 2), 40, 421, 456, this);
+        g.drawImage(oak, (getWidth() / 2 - 421 / 2), 0, 421, 456, this);
 
 
 

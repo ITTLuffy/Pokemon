@@ -90,8 +90,7 @@ public class Pres2 extends JPanel {
 
         g.setFont(new Font("Courier New", Font.BOLD, 41));
 
-        g.drawString("Hello, there!", 60, getHeight() - 105);
-        g.drawString("Glad to meet you!", 60, getHeight() - 55);
+        g.drawString("Welcome to the world of POKéMON!", 60, getHeight() - 105);
 
         // Freccia
         g.drawImage(freccia, 485, 482, null); // disegno l'icona

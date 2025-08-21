@@ -52,4 +52,50 @@ public class Pres2 extends JPanel {
         requestFocusInWindow(); // il focus funziona meglio qui
     }
 
+    @Override
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        // Pezzo bianco
+        g.setColor(new Color(231, 247, 239));
+        g.fillRect(0, 0, getWidth(), getHeight() / 2 - 50);
+
+        g.setColor(new Color(206, 231, 222));
+        g.fillRect(0, getHeight() / 2 - 50, getWidth(), 20);
+
+        g.setColor(new Color(181, 214, 206));
+        g.fillRect(0, getHeight() / 2 - 30, getWidth(), 20);
+
+        g.setColor(new Color(156, 198, 189));
+        g.fillRect(0, getHeight() / 2 - 10, getWidth(), 20);
+
+        g.setColor(new Color(132, 181, 173));
+        g.fillRect(0, getHeight() / 2 + 10, getWidth(), 20);
+
+        g.setColor(new Color(107, 165, 156));
+        g.fillRect(0, getHeight() / 2 + 30, getWidth(), 20);
+
+        g.setColor(new Color(82, 148, 140));
+        g.fillRect(0, getHeight() / 2 + 50, getWidth(), 20);
+
+        g.setColor(new Color(66, 140, 132));
+        g.fillRect(0, getHeight() / 2 + 70, getWidth(), getHeight() - (getHeight() / 2 + 70));
+
+        g.drawImage(oak, (getWidth() / 2 - 421 / 2), 0, 421, 456, this);
+
+        // Scritta
+        g.setColor(new Color(231, 247, 239));
+        g.fillRect(50, getHeight() - 150, getWidth() - 100, 120);
+        g.setColor(Color.gray);
+
+        g.setFont(new Font("Courier New", Font.BOLD, 41));
+
+        g.drawString("Hello, there!", 60, getHeight() - 105);
+        g.drawString("Glad to meet you!", 60, getHeight() - 55);
+
+        // Freccia
+        g.drawImage(freccia, 485, 482, null); // disegno l'icona
+
+    }
+
 }

@@ -93,7 +93,7 @@ public class Pres2 extends JPanel {
         g.drawString("Welcome to the world of POKéMON!", 60, getHeight() - 105);
 
         // Freccia
-        g.drawImage(freccia, 485, 482, null); // disegno l'icona
+        g.drawImage(freccia, 850, 432, null); // disegno l'icona
 
     }
 

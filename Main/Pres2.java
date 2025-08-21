@@ -1,4 +1,7 @@
 package Main;
 
-public class Pres2 {
+import javax.swing.*;
+
+public class Pres2 extends JPanel {
+
 }
